@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Newton-Raphson</title>
+		<link rel="stylesheet" href="../styles.css" />
+	</head>
+	<body>
+		<!-- mathjs -->
+		<script src="https://unpkg.com/mathjs@5.0.0/dist/math.min.js"></script>
+		<!-- app -->
+		<script src="./main.js"></script>
+
+		<div class="container">
+			<div class="title-container">
+				<span>Método Newton-Raphson para encontrar raízes</span>
+				<span>(precisão de 0.00001)</span>
+			</div>
+
+			<table class="form">
+				<tr>
+					<td>Equação:</td>
+					<td class="input"><input type="text" id="equation" /></td>
+				</tr>
+				<tr>
+					<td>Chute inicial:</td>
+					<td class="input"><input type="text" id="a" /></td>
+				</tr>
+			</table>
+
+			<button onclick="getFormValues()">Calcular</button>
+		</div>
+		<table id="result"></table>
+	</body>
+</html>

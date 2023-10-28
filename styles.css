@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+	--primary-color: #1181f9;
+	--secondary-color: #ddd;
+}
+
+body {
+	padding: 2rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.form {
+	border-collapse: separate;
+	border-spacing: 1.4rem;
+	width: 15%;
+	text-align: center;
+}
+
+.form tr:not(:last-of-type) {
+	padding-bottom: 1.4rem;
+}
+
+input {
+	padding: 0.5rem;
+}
+
+button,
+a {
+	align-self: center;
+	padding: 0.5rem 1rem;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.title-container {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+#result {
+	margin-top: 1.5rem;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#result tbody :first-child {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: var(--primary-color);
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+#result tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#result tr:hover:not(:first-of-type) {
+	background-color: var(--secondary-color);
+}
+
+#result td,
+#result tr:first-of-type {
+	border: 1px solid var(--secondary-color);
+	padding: 8px;
+}
