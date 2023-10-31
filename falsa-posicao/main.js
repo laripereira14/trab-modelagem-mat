@@ -10,7 +10,7 @@ function false_position(equation, a, b) {
 	let interaction = 0;
 	let results = [];
 
-	while (b - a > epsilon && interaction < 51) {
+	while (b - a > epsilon && interaction < 101) {
 		let fa = solve(a, equation);
 		let fb = solve(b, equation);
 		let xk = (a * fb - b * fa) / (fb - fa);
